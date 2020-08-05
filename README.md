@@ -79,22 +79,28 @@ did:vaa:IDcontract1:86.100.1234/abcdfe.123
 ## DID Document
 
     {
-        "@context": "https://www.w3.org/2019/did/v1",
-        "id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
-        "controllor":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
-        "verificationMethod": [{
-        	"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#key1",
-        	"type": "RsaVerificationKey2018",
-        	"controller": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
-      		"publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
-      ]},
-         "service": [{
-             "id":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#resolver",
-             "type": "DIDResolve",
-             "serviceEndpoint": "http://bidspace.cn/"
-        ]}
-         "created":  "20200101235959",
-         "updated": "20200101235959"
+    	"@context": "https://www.w3.org/2019/did/v1",
+    	"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    	"controllor": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    	"verificationMethod": [{
+    		"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#key1",
+    		"type": "RsaVerificationKey2018",
+    		"controller": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    		"publicKeyPem": "-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAow6WDUa6hcC5069KtQ2g\r\nYEAWLn+poDbE5kF4kRzrLL7pUSma8rKacxxqKEow1+meW5wbM8nSc5mCjBdLfl5R\r\nFYnaCePOk8taVxclLum7E7WnY2BHbvL+LA5A2T8Ih52qOmKc5Pajsp7Ac38Eu5VJ\r\nrQu4RBMu0xkn6fEUFpajJkkfPTdWc5fDtVwgnYVWGnGB9VIAxIlkCbFQQc4g3sEP\r\nw/Iy1l3Cnedu63HBC1w/dDealLG5gGoVyBmY68er8yaezLNps381BvJJJNic4CRX\r\nhmULgiRAEJGQGPUhNStduWRAy5yELkLvAN2ZpRE8s8j5tMM4zwc+WcBlDjrnnp2y\r\nJwIDAQAB\r\n-----END PUBLIC KEY-----"
+    	}],
+    	"service": [{
+    		"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#resolver",
+    		"type": "DIDResolve",
+    		"serviceEndpoint": "http://bidspace.cn/"
+    	}],
+    	"created": "2020-01-01T23:59:00Z",
+    	"updated": "2020-01-01T23:59:00Z",
+    	"proof": {
+    		"type": "RsaSignature2018",
+    		"created": "2020-01-01T23:59:00Z",
+    		"verificationMethod": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    		"jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..C4caLqq0IOWqb9Pz_IoEYJ18bwLTE4RgNaY4GdCd5u5nN9Yo_rTIcSsZYHpPF0PkdYK7yemUO7BrNnlyjyxBQLhyVdZC65eKf7ZL2aBzryFF6rqpA7EhXOGm6d9TcZwPXHUkpU5ivONJjH4w8P1GMkULLyODooR9fPzAmxcAob1gzKiOpN8Istlx1qE96s18lg2kMJtRwz3ALv5JIB2Dc8_9uOCtWyAi1hHSHWxBiyEYjQYbfYzk1_hu9lT6BiExyhqJdP6ldxig89ofMBhpigceKS625wNRwIR1LIB8-9tXKESW2Fy8JYRqrH_7oeKPh-qb8ZnKOJL_KbPWv7JLeg"
+    	}
     }
 
 
@@ -116,22 +122,28 @@ To create a DID document, you must submit a transaction that looks like this:
     "id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
     "opration":"create",
     "document":  {
-        "@context": "https://w3id.org/did/v1",
-        "id":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
-        "publicKey": [
-         {
-                "id":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#key1",
-                "type": "RsaVerificationKey2018",
-                "publicKeyPem": "--BEGIN....END---"
-        }],
-        "service": [
-        {
-                "id":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#resolver",
-                "type": "DIDResolve",
-                "serviceEndpoint": "http://bidspace.cn/"
-        }],
-        "created":  "20200101235959",
-        "updated": "20200101235959"
+    	"@context": "https://www.w3.org/2019/did/v1",
+    	"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    	"controllor": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    	"verificationMethod": [{
+    		"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#key1",
+    		"type": "RsaVerificationKey2018",
+    		"controller": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    		"publicKeyPem": "-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAow6WDUa6hcC5069KtQ2g\r\nYEAWLn+poDbE5kF4kRzrLL7pUSma8rKacxxqKEow1+meW5wbM8nSc5mCjBdLfl5R\r\nFYnaCePOk8taVxclLum7E7WnY2BHbvL+LA5A2T8Ih52qOmKc5Pajsp7Ac38Eu5VJ\r\nrQu4RBMu0xkn6fEUFpajJkkfPTdWc5fDtVwgnYVWGnGB9VIAxIlkCbFQQc4g3sEP\r\nw/Iy1l3Cnedu63HBC1w/dDealLG5gGoVyBmY68er8yaezLNps381BvJJJNic4CRX\r\nhmULgiRAEJGQGPUhNStduWRAy5yELkLvAN2ZpRE8s8j5tMM4zwc+WcBlDjrnnp2y\r\nJwIDAQAB\r\n-----END PUBLIC KEY-----"
+    	}],
+    	"service": [{
+    		"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#resolver",
+    		"type": "DIDResolve",
+    		"serviceEndpoint": "http://bidspace.cn/"
+    	}],
+    	"created": "2020-01-01T23:59:00Z",
+    	"updated": "2020-01-01T23:59:00Z",
+    	"proof": {
+    		"type": "RsaSignature2018",
+    		"created": "2020-01-01T23:59:00Z",
+    		"verificationMethod": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    		"jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..C4caLqq0IOWqb9Pz_IoEYJ18bwLTE4RgNaY4GdCd5u5nN9Yo_rTIcSsZYHpPF0PkdYK7yemUO7BrNnlyjyxBQLhyVdZC65eKf7ZL2aBzryFF6rqpA7EhXOGm6d9TcZwPXHUkpU5ivONJjH4w8P1GMkULLyODooR9fPzAmxcAob1gzKiOpN8Istlx1qE96s18lg2kMJtRwz3ALv5JIB2Dc8_9uOCtWyAi1hHSHWxBiyEYjQYbfYzk1_hu9lT6BiExyhqJdP6ldxig89ofMBhpigceKS625wNRwIR1LIB8-9tXKESW2Fy8JYRqrH_7oeKPh-qb8ZnKOJL_KbPWv7JLeg"
+    	}
     }
     }
 
@@ -152,23 +164,29 @@ To read an identifier, look it up from the blockchain, and then directly obtain 
 {
 "responseCode":0,
 "id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
-"document":  {
-    "@context": "https://w3id.org/did/v1",
-    "id":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
-    "publicKey": [
-     {
-            "id":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#key1",
-            "type": "RsaVerificationKey2018",
-            "publicKeyPem": "--BEGIN....END---"
-    }],
-    "service": [
-    {
-            "id":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#resolver",
-            "type": "DIDResolve",
-            "serviceEndpoint": "http://bidspace.cn/"
-    }],
-    "created":  "20200101235959",
-    "updated": "20200101235959"
+"document": {
+	"@context": "https://www.w3.org/2019/did/v1",
+	"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+	"controllor": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+	"verificationMethod": [{
+		"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#key1",
+		"type": "RsaVerificationKey2018",
+		"controller": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+		"publicKeyPem": "-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAow6WDUa6hcC5069KtQ2g\r\nYEAWLn+poDbE5kF4kRzrLL7pUSma8rKacxxqKEow1+meW5wbM8nSc5mCjBdLfl5R\r\nFYnaCePOk8taVxclLum7E7WnY2BHbvL+LA5A2T8Ih52qOmKc5Pajsp7Ac38Eu5VJ\r\nrQu4RBMu0xkn6fEUFpajJkkfPTdWc5fDtVwgnYVWGnGB9VIAxIlkCbFQQc4g3sEP\r\nw/Iy1l3Cnedu63HBC1w/dDealLG5gGoVyBmY68er8yaezLNps381BvJJJNic4CRX\r\nhmULgiRAEJGQGPUhNStduWRAy5yELkLvAN2ZpRE8s8j5tMM4zwc+WcBlDjrnnp2y\r\nJwIDAQAB\r\n-----END PUBLIC KEY-----"
+	}],
+	"service": [{
+		"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#resolver",
+		"type": "DIDResolve",
+		"serviceEndpoint": "http://bidspace.cn/"
+	}],
+	"created": "2020-01-01T23:59:00Z",
+	"updated": "2020-01-01T23:59:00Z",
+	"proof": {
+		"type": "RsaSignature2018",
+		"created": "2020-01-01T23:59:00Z",
+		"verificationMethod": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+		"jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..C4caLqq0IOWqb9Pz_IoEYJ18bwLTE4RgNaY4GdCd5u5nN9Yo_rTIcSsZYHpPF0PkdYK7yemUO7BrNnlyjyxBQLhyVdZC65eKf7ZL2aBzryFF6rqpA7EhXOGm6d9TcZwPXHUkpU5ivONJjH4w8P1GMkULLyODooR9fPzAmxcAob1gzKiOpN8Istlx1qE96s18lg2kMJtRwz3ALv5JIB2Dc8_9uOCtWyAi1hHSHWxBiyEYjQYbfYzk1_hu9lT6BiExyhqJdP6ldxig89ofMBhpigceKS625wNRwIR1LIB8-9tXKESW2Fy8JYRqrH_7oeKPh-qb8ZnKOJL_KbPWv7JLeg"
+	}
 }
 }
 ```
@@ -187,31 +205,37 @@ To update a DID document, you must submit a transaction that looks like this:
     {
     "id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
     "opration":"update",
-    "document":  {
-        "@context": "https://w3id.org/did/v1",
-        "id":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
-        "publicKey": [
-         {
-                "id":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#keys",
-                "type": "RsaVerificationKey2018",
-                "publicKeyPem": "--BEGIN....END---"
-        }],
-        "service": [
-        {
-                "id":"did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#resolver",
-                "type": "DIDResolve",
-                "serviceEndpoint": "http://bidspace.cn/"
-        }],
-        "created":  "20200101235959",
-        "updated": "20200101235959"
+    "document": {
+    	"@context": "https://www.w3.org/2019/did/v1",
+    	"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    	"controllor": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    	"verificationMethod": [{
+    		"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#key1",
+    		"type": "RsaVerificationKey2018",
+    		"controller": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    		"publicKeyPem": "-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAow6WDUa6hcC5069KtQ2g\r\nYEAWLn+poDbE5kF4kRzrLL7pUSma8rKacxxqKEow1+meW5wbM8nSc5mCjBdLfl5R\r\nFYnaCePOk8taVxclLum7E7WnY2BHbvL+LA5A2T8Ih52qOmKc5Pajsp7Ac38Eu5VJ\r\nrQu4RBMu0xkn6fEUFpajJkkfPTdWc5fDtVwgnYVWGnGB9VIAxIlkCbFQQc4g3sEP\r\nw/Iy1l3Cnedu63HBC1w/dDealLG5gGoVyBmY68er8yaezLNps381BvJJJNic4CRX\r\nhmULgiRAEJGQGPUhNStduWRAy5yELkLvAN2ZpRE8s8j5tMM4zwc+WcBlDjrnnp2y\r\nJwIDAQAB\r\n-----END PUBLIC KEY-----"
+    	}],
+    	"service": [{
+    		"id": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB#resolver",
+    		"type": "DIDResolve",
+    		"serviceEndpoint": "http://bidspace.cn/"
+    	}],
+    	"created": "2020-01-01T23:59:00Z",
+    	"updated": "2020-08-01T23:59:00Z",
+    	"proof": {
+    		"type": "RsaSignature2018",
+    		"created": "2020-08-01T23:59:00Z",
+    		"verificationMethod": "did:vaa:gxAcE6upFw6DNbG3rfngM3VxCNB",
+    		"jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..C4caLqq0IOWqb9Pz_IoEYJ18bwLTE4RgNaY4GdCd5u5nN9Yo_rTIcSsZYHpPF0PkdYK7yemUO7BrNnlyjyxBQLhyVdZC65eKf7ZL2aBzryFF6rqpA7EhXOGm6d9TcZwPXHUkpU5ivONJjH4w8P1GMkULLyODooR9fPzAmxcAob1gzKiOpN8Istlx1qE96s18lg2kMJtRwz3ALv5JIB2Dc8_9uOCtWyAi1hHSHWxBiyEYjQYbfYzk1_hu9lT6BiExyhqJdP6ldxig89ofMBhpigceKS625wNRwIR1LIB8-9tXKESW2Fy8JYRqrH_7oeKPh-qb8ZnKOJL_KbPWv7JLeg"
     	}
+    }
     }
 
 ### Delete（Revoke）
 
 Deletion means invalidation of the existing DID. An invalid DID has its revoked date time set;
 
-    "revoked": "2020-01-01T15:09:03.3712946+13:00"
+    "revoked": "2020-01-01T23:59:00Z"
 
 A DID document can be revoked by performing an HTTP POST.             
 To revoke the document of the DID, the owner of the DID should send a request that looks like this:
